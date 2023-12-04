@@ -1,16 +1,4 @@
-# sloppy_fish
+Flappy Bird clone app but with fish instead. Done with Flutter and Flame 2d game engine
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Simulator Screen Shot - iPhone 14 Pro Max - 2023-12-04 at 00 25 35](https://github.com/AkmenZ/SloppyFishGame/assets/78148307/baa5e434-1c69-4a2e-9e65-9fa8306561ba)
+![Simulator Screen Shot - iPhone 14 Pro Max - 2023-12-04 at 00 25 59](https://github.com/AkmenZ/SloppyFishGame/assets/78148307/a0a89fe2-d953-4c63-a755-583047f50ef2)
