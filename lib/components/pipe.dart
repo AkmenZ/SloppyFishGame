@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:sloppy_fish/game/assets.dart';
@@ -32,5 +33,7 @@ class Pipe extends SpriteComponent with HasGameRef<SloppyFishGame> {
         sprite = Sprite(pipeBottom);
         break;
     }
+
+    add(RectangleHitbox());
   }
 }

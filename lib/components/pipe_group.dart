@@ -1,8 +1,9 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flame/components.dart';
-import 'package:flutter/material.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:sloppy_fish/components/pipe.dart';
+import 'package:sloppy_fish/game/assets.dart';
 import 'package:sloppy_fish/game/config.dart';
 import 'package:sloppy_fish/game/sloppy_fish_game.dart';
 
@@ -32,9 +33,19 @@ class PipeGroup extends PositionComponent with HasGameRef<SloppyFishGame> {
     super.update(dt);
     position.x -= Config.gameSpeed * dt;
 
-    if (position.x < -10) {
-      removeFromParent();
-      debugPrint('Pipe Removed');
+    if (position.x < -20) {
+      removeFromParent(); // remove pipe
+      updateScore(); // update score
     }
+
+    if (gameRef.isHit) {
+      removeFromParent();
+      gameRef.isHit = false;
+    }
+  }
+
+  void updateScore() {
+    FlameAudio.play(Assets.scoreSound);
+    gameRef.player.score += 1;
   }
 }
